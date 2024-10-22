@@ -1,0 +1,20 @@
+{
+  "name": "email-integration-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^22.7.8",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.15",
+    "playwright-mail-reporter": "^0.0.7"
+  }
+}
