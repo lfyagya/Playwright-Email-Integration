@@ -11,8 +11,6 @@ This project integrates the Playwright testing framework with the `playwright-ma
 - [Usage](#usage)
 - [Running Tests](#running-tests)
 - [Environment Variables](#environment-variables)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
