@@ -1,6 +1,6 @@
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=465
 SMTP_USER=example@gmail.com
-SMTP_PASS=hsja jhui hjhk njjk
+SMTP_PASS=smptpassword
 SENDER_EMAIL=senderemail@gmail.com
 RECIPIENT_EMAIL=recipientemail@gmail.com
