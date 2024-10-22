@@ -58,3 +58,7 @@ You must create a `.env` file in the root of your project directory to store you
     SMTP_PASS=your_password            # Your SMTP password
     SENDER_EMAIL=sender@example.com    # Email address from which to send
     RECIPIENT_EMAIL=recipient@example.com # Comma-separated list of recipient emails
+
+## Screenshot
+
+![Email Sent Screenshot](./images/playwright_email_integration.png)
