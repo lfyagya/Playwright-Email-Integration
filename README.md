@@ -2,15 +2,24 @@
 
 This project integrates the Playwright testing framework with the `playwright-mail-reporter` to send email reports after running tests. It allows for easy configuration of SMTP settings.
 
-## Table of Contents
+# Prerequisites
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Running Tests](#running-tests)
-- [Environment Variables](#environment-variables)
+Before starting the email integration, ensure you have the following:
+
+- Node.js (v12 or above recommended)
+- Playwright installed in your project
+- SMTP server details (e.g., Gmail, Office365, SendGrid)
+- npm (Node package manager)
+
+# SMTP Email Account
+
+To send emails via Cypress, you'll need an SMTP account. You can use any of the following:
+
+Gmail SMTP:
+
+- SMTP Host: smtp.gmail.com
+- Port: 465 (for SSL) or 587 (for TLS)
+- Requires App Passwords (if using 2FA)
 
 ## Features
 
@@ -18,11 +27,6 @@ This project integrates the Playwright testing framework with the `playwright-ma
 - Generates HTML reports for test results.
 - Sends test results via email.
 - Configurable SMTP settings using environment variables.
-
-## Requirements
-
-- Node.js (>= 14.x)
-- npm (Node package manager)
 
 ## Installation
 
@@ -43,19 +47,25 @@ The Playwright configuration file: `playwright.config.js` is responsible for set
 This project includes the `playwright-mail-reporter` that automatically sends an email with the test results after execution. The configuration for this reporter is done in the reporter section of `playwright.config.js`.
 
 ## Running Tests
+
 To execute the tests, run the following command in your terminal:
-    ```bash
-    npx playwright test
+
+```bash
+npx playwright test
+```
 
 ## Environment Variables
-You must create a `.env` file in the root of your project directory to store your SMTP configuration. Below is a sample .env file template:
-    ```bash
-    SMTP_HOST=smtp.example.com        # Your SMTP server
-    SMTP_PORT=465                     # Your SMTP port
-    SMTP_USER=your_username            # Your SMTP username
-    SMTP_PASS=your_password            # Your SMTP password
-    SENDER_EMAIL=sender@example.com    # Email address from which to send
-    RECIPIENT_EMAIL=recipient@example.com # Comma-separated list of recipient emails
+
+You must create a `.env` file in the root of your project directory to store your SMTP configuration. Below is a sample `.env` file template:
+
+```bash
+SMTP_HOST=smtp.example.com        # Your SMTP server
+SMTP_PORT=465                     # Your SMTP port
+SMTP_USER=your_username            # Your SMTP username
+SMTP_PASS=your_password            # Your SMTP password
+SENDER_EMAIL=sender@example.com    # Email address from which to send
+RECIPIENT_EMAIL=recipient@example.com # Comma-separated list of recipient emails
+```
 
 ## Screenshot
 
